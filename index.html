@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>م. عزام - مطور ويب مبدع | خدمات تطوير المواقع والتطبيقات</title>
+    
+    <!-- Accessibility improvements -->
+    <meta name="color-scheme" content="dark">
+    <meta name="supported-color-schemes" content="dark">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="مطور ويب متخصص مع 8+ سنوات خبرة في تطوير المواقع والتطبيقات. خدمات React, Node.js, React Native. مدرب معتمد من Apple و SAFCSP.">
+    <meta name="keywords" content="مطور ويب, برمجة, React, Node.js, تطوير مواقع, تطبيقات موبايل, مدرب برمجة, معسكر عزام">
+    <meta name="author" content="م. عزام الراشد">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0d0d0d">
+    <meta name="msapplication-TileColor" content="#0d0d0d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="م. عزام - مطور ويب مبدع">
+    <meta property="og:description" content="مطور ويب متخصص مع 8+ سنوات خبرة في تطوير المواقع والتطبيقات">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://azzam-coding.com">
+    <meta property="og:image" content="https://azzam-coding.com/identity_rock_and_mac.jpg">
+    <meta property="og:locale" content="ar_SA">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="م. عزام - مطور ويب مبدع">
+    <meta name="twitter:description" content="مطور ويب متخصص مع 8+ سنوات خبرة في تطوير المواقع والتطبيقات">
+    <meta name="twitter:image" content="https://azzam-coding.com/identity_rock_and_mac.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    
+    <!-- Performance optimizations -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="identity_rock_and_mac.jpg" as="image">
+    <link rel="preload" href="identity_modern_office.jpg" as="image">
+    <link rel="preload" href="hero_background.jpg" as="image">
+    <link rel="preload" href="identity_heritage_building.jpg" as="image">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <h2 class="logo" data-ar="معسكر عزام" data-en="Azzam Bootcamp">معسكر عزام</h2>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#about" data-ar="عن المعسكر" data-en="ABOUT">عن المعسكر</a></li>
+                    <li><a href="#curriculum" data-ar="المنهج" data-en="CURRICULUM">المنهج</a></li>
+                    <li><a href="#trainer" data-ar="المدرب" data-en="TRAINER">المدرب</a></li>
+                    <li><a href="#contact" data-ar="تواصل" data-en="CONTACT">تواصل</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="language-toggle" id="language-toggle">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://linkedin.com/in/azzam-alrashid" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/azzam.coding" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/azzam_coding" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://tiktok.com/@azzam.coding" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/966559279486" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:azzam.rar@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <!-- Image removed as requested -->
+            </div>
+            <div class="hero-right">
+                <h3 class="subtitle" data-ar="مرحباً، أنا عزام الراشد" data-en="Hi, I'm Azzam Al-Rashid">مرحباً، أنا عزام الراشد</h3>
+                <h1 class="main-title">
+                    <span class="title-line" data-ar="متخصص" data-en="EXPERT">متخصص</span>
+                    <span class="title-line" data-ar="تقني" data-en="TECHNICAL">تقني</span>
+                    <span class="title-line" data-ar="مدرب" data-en="TRAINER">مدرب</span>
+                </h1>
+                <div class="certification">
+                    <span class="asterisk">*</span>
+                    <div class="cert-line"></div>
+                    <span class="cert-text" data-ar="مدرب معتمد من Apple و SAFCSP" data-en="Apple Certified & SAFCSP Trainer">مدرب معتمد من Apple و SAFCSP</span>
+                    <span class="w-logo">A</span>
+                </div>
+                <p class="description" data-ar="أقود معسكر عزام البرمجي، برنامج تدريبي متخصص للمطورين السعوديين الطموحين. أقدم تدريباً شاملاً في البرمجة الحديثة مع التركيز على التقنيات الأكثر طلباً في السوق." data-en="I lead Azzam Coding Bootcamp, a specialized training program for ambitious Saudi developers. I provide comprehensive training in modern programming with a focus on the most in-demand technologies in the market.">
+                    أقود معسكر عزام البرمجي، برنامج تدريبي متخصص للمطورين السعوديين الطموحين. أقدم تدريباً شاملاً في البرمجة الحديثة مع التركيز على التقنيات الأكثر طلباً في السوق.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" data-ar="سجل الآن" data-en="Register Now">سجل الآن</button>
+                    <button class="btn-secondary" data-ar="تعرف على المعسكر" data-en="Learn About Bootcamp">تعرف على المعسكر</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me" id="about">
+        <div class="container">
+            <h2 class="section-title" data-ar="نبذة عني" data-en="About Me">نبذة عني</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-ar="مطور ويب متخصص مع 8+ سنوات خبرة" data-en="Specialized Web Developer with 8+ Years Experience">مطور ويب متخصص مع 8+ سنوات خبرة</h3>
+                    <p data-ar="أنا م. عزام الراشد، مطور ويب متخصص مع أكثر من 8 سنوات من الخبرة في تطوير المواقع والتطبيقات. أتخصص في التقنيات الحديثة مثل React, Node.js, React Native، وأقدم خدمات تطوير شاملة للشركات والمؤسسات." data-en="I am M. Azzam Al-Rashid, a specialized web developer with over 8 years of experience in website and application development. I specialize in modern technologies like React, Node.js, React Native, and provide comprehensive development services for companies and organizations.">
+                        أنا م. عزام الراشد، مطور ويب متخصص مع أكثر من 8 سنوات من الخبرة في تطوير المواقع والتطبيقات. أتخصص في التقنيات الحديثة مثل React, Node.js, React Native، وأقدم خدمات تطوير شاملة للشركات والمؤسسات.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label" data-ar="سنوات خبرة" data-en="Years Experience">سنوات خبرة</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label" data-ar="مشروع مكتمل" data-en="Completed Projects">مشروع مكتمل</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label" data-ar="طالب متخرج" data-en="Graduated Students">طالب متخرج</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="identity_rock_and_mac.jpg" alt="م. عزام الراشد" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Partner With Me Section -->
+    <section class="why-partner">
+        <div class="container">
+            <h2 class="section-title" data-ar="لماذا تختار معسكر عزام؟" data-en="Why Choose Azzam Bootcamp?">لماذا تختار معسكر عزام؟</h2>
+            <div class="partner-content">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 data-ar="تدريب متخصص" data-en="Specialized Training">تدريب متخصص</h3>
+                        <p data-ar="برنامج تدريبي مصمم خصيصاً للمطورين السعوديين مع منهج حديث ومتطور" data-en="Specialized training program designed specifically for Saudi developers with modern and advanced curriculum">برنامج تدريبي مصمم خصيصاً للمطورين السعوديين مع منهج حديث ومتطور</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 data-ar="تقنيات حديثة" data-en="Modern Technologies">تقنيات حديثة</h3>
+                        <p data-ar="تعلم أحدث التقنيات البرمجية المطلوبة في السوق مثل React, Node.js, و Mobile Development" data-en="Learn the latest programming technologies in demand like React, Node.js, and Mobile Development">تعلم أحدث التقنيات البرمجية المطلوبة في السوق مثل React, Node.js, و Mobile Development</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 data-ar="مدرب معتمد" data-en="Certified Trainer">مدرب معتمد</h3>
+                        <p data-ar="مدرب معتمد من Apple و SAFCSP مع خبرة 5+ سنوات في التدريب التقني" data-en="Apple and SAFCSP certified trainer with 5+ years of technical training experience">مدرب معتمد من Apple و SAFCSP مع خبرة 5+ سنوات في التدريب التقني</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3 data-ar="مشاريع عملية" data-en="Practical Projects">مشاريع عملية</h3>
+                        <p data-ar="بناء مشاريع حقيقية وتطبيقية لتطوير مهاراتك البرمجية في بيئة عمل حقيقية" data-en="Build real and practical projects to develop your programming skills in a real work environment">بناء مشاريع حقيقية وتطبيقية لتطوير مهاراتك البرمجية في بيئة عمل حقيقية</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 data-ar="شهادة معتمدة" data-en="Certified Certificate">شهادة معتمدة</h3>
+                        <p data-ar="احصل على شهادة معتمدة من معسكر عزام البرمجي معترف بها في سوق العمل" data-en="Get a certified certificate from Azzam Coding Bootcamp recognized in the job market">احصل على شهادة معتمدة من معسكر عزام البرمجي معترف بها في سوق العمل</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-ar="مجتمع تقني" data-en="Tech Community">مجتمع تقني</h3>
+                        <p data-ar="انضم إلى مجتمع تقني نشط من المطورين السعوديين وشارك في الفعاليات والورش" data-en="Join an active tech community of Saudi developers and participate in events and workshops">انضم إلى مجتمع تقني نشط من المطورين السعوديين وشارك في الفعاليات والورش</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Expertise Section -->
+    <section class="services" id="curriculum">
+        <div class="container">
+            <h2 class="section-title" data-ar="المنهج الدراسي" data-en="Curriculum">المنهج الدراسي</h2>
+            <div class="curriculum-intro">
+                <p data-ar="برنامج تدريبي شامل مدته 12 أسبوعاً، مصمم لتحويلك من مبتدئ إلى مطور محترف" data-en="A comprehensive 12-week training program designed to transform you from beginner to professional developer">برنامج تدريبي شامل مدته 12 أسبوعاً، مصمم لتحويلك من مبتدئ إلى مطور محترف</p>
+            </div>
+            <div class="curriculum-timeline">
+                <div class="timeline-phase">
+                    <div class="phase-number">01</div>
+                    <div class="phase-content">
+                        <h3 data-ar="المرحلة الأولى: الأساسيات" data-en="Phase 1: Fundamentals">المرحلة الأولى: الأساسيات</h3>
+                        <div class="phase-duration" data-ar="الأسابيع 1-3" data-en="Weeks 1-3">الأسابيع 1-3</div>
+                        <div class="phase-skills">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span data-ar="HTML5" data-en="HTML5">HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span data-ar="CSS3" data-en="CSS3">CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span data-ar="JavaScript" data-en="JavaScript">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase">
+                    <div class="phase-number">02</div>
+                    <div class="phase-content">
+                        <h3 data-ar="المرحلة الثانية: التطوير المتقدم" data-en="Phase 2: Advanced Development">المرحلة الثانية: التطوير المتقدم</h3>
+                        <div class="phase-duration" data-ar="الأسابيع 4-6" data-en="Weeks 4-6">الأسابيع 4-6</div>
+                        <div class="phase-skills">
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span data-ar="React" data-en="React">React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span data-ar="Node.js" data-en="Node.js">Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span data-ar="MongoDB" data-en="MongoDB">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase">
+                    <div class="phase-number">03</div>
+                    <div class="phase-content">
+                        <h3 data-ar="المرحلة الثالثة: التطبيقات المتقدمة" data-en="Phase 3: Advanced Applications">المرحلة الثالثة: التطبيقات المتقدمة</h3>
+                        <div class="phase-duration" data-ar="الأسابيع 7-9" data-en="Weeks 7-9">الأسابيع 7-9</div>
+                        <div class="phase-skills">
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span data-ar="React Native" data-en="React Native">React Native</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cloud"></i>
+                                <span data-ar="Cloud Deployment" data-en="Cloud Deployment">Cloud Deployment</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span data-ar="Security" data-en="Security">Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase">
+                    <div class="phase-number">04</div>
+                    <div class="phase-content">
+                        <h3 data-ar="المرحلة الرابعة: المشاريع النهائية" data-en="Phase 4: Final Projects">المرحلة الرابعة: المشاريع النهائية</h3>
+                        <div class="phase-duration" data-ar="الأسابيع 10-12" data-en="Weeks 10-12">الأسابيع 10-12</div>
+                        <div class="phase-skills">
+                            <div class="skill-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <span data-ar="Portfolio Projects" data-en="Portfolio Projects">مشاريع المحفظة</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-users"></i>
+                                <span data-ar="Team Collaboration" data-en="Team Collaboration">التعاون الجماعي</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-certificate"></i>
+                                <span data-ar="Certification" data-en="Certification">الشهادة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interested in Working Together Section -->
+    <section class="working-together">
+        <div class="container">
+            <h2 class="section-title" data-ar="انضم إلينا اليوم" data-en="Join Us Today">انضم إلينا اليوم</h2>
+            <div class="join-content">
+                <div class="join-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label" data-ar="طالب متخرج" data-en="Graduates">طالب متخرج</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label" data-ar="معدل التوظيف" data-en="Employment Rate">معدل التوظيف</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label" data-ar="أسبوع تدريب" data-en="Weeks Training">أسبوع تدريب</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label" data-ar="دعم فني" data-en="Support">دعم فني</div>
+                    </div>
+                </div>
+                
+                <div class="join-form-container">
+                    <div class="join-form">
+                        <h3 data-ar="سجل في المعسكر الآن" data-en="Register for Bootcamp Now">سجل في المعسكر الآن</h3>
+                        <form class="registration-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="fullName" name="fullName" required>
+                                <label for="fullName" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" required>
+                                <label for="phone" data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="serviceType" name="serviceType" required>
+                                    <option value=""></option>
+                                    <option value="website" data-ar="تطوير موقع ويب" data-en="Website Development">تطوير موقع ويب</option>
+                                    <option value="mobile" data-ar="تطبيق موبايل" data-en="Mobile App">تطبيق موبايل</option>
+                                    <option value="training" data-ar="تدريب برمجي" data-en="Programming Training">تدريب برمجي</option>
+                                    <option value="consultation" data-ar="استشارة تقنية" data-en="Technical Consultation">استشارة تقنية</option>
+                                </select>
+                                <label for="serviceType" data-ar="نوع الخدمة" data-en="Service Type">نوع الخدمة</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+                                <label for="projectDescription" data-ar="وصف المشروع أو الطلب" data-en="Project Description">وصف المشروع أو الطلب</label>
+                            </div>
+                            <button type="submit" class="submit-btn" data-ar="إرسال الطلب 🚀" data-en="Send Request 🚀">إرسال الطلب 🚀</button>
+                        </form>
+                    </div>
+                    
+                    <div class="join-benefits">
+                        <h4 data-ar="مميزات الانضمام" data-en="Join Benefits">مميزات الانضمام</h4>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-ar="شهادة معتمدة" data-en="Certified Certificate">شهادة معتمدة</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-ar="مشاريع حقيقية" data-en="Real Projects">مشاريع حقيقية</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-ar="دعم مهني" data-en="Career Support">دعم مهني</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-ar="شبكة مهنية" data-en="Professional Network">شبكة مهنية</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-ar="ضمان التوظيف" data-en="Job Guarantee">ضمان التوظيف</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-info">
+                            <div class="price">
+                                <span class="currency">ريال</span>
+                                <span class="amount">5,000</span>
+                                <span class="period" data-ar="للمعسكر الكامل" data-en="for full bootcamp">للمعسكر الكامل</span>
+                            </div>
+                            <div class="discount" data-ar="خصم 20% للدفع المبكر" data-en="20% discount for early payment">خصم 20% للدفع المبكر</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- From the Lab Section -->
+    <section class="lab">
+        <div class="container">
+            <h2 class="section-title" data-ar="من المختبر" data-en="From the Lab">من المختبر</h2>
+            <div class="lab-intro">
+                <p data-ar="استكشف مشاريعنا التجريبية والتقنيات الناشئة" data-en="Explore our experimental projects and emerging technologies">استكشف مشاريعنا التجريبية والتقنيات الناشئة</p>
+            </div>
+            <div class="lab-showcase">
+                <div class="lab-project">
+                    <div class="project-visual">
+                        <div class="tech-stack">
+                            <span class="tech-item">AI</span>
+                            <span class="tech-item">ML</span>
+                            <span class="tech-item">Python</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-ar="مساعد برمجي ذكي" data-en="Smart Coding Assistant">مساعد برمجي ذكي</h3>
+                        <p data-ar="نظام ذكي يساعد في كتابة الكود وتحسين الأداء" data-en="Intelligent system for code writing and performance optimization">نظام ذكي يساعد في كتابة الكود وتحسين الأداء</p>
+                        <div class="project-status">
+                            <span class="status-badge active" data-ar="قيد التطوير" data-en="In Development">قيد التطوير</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lab-project">
+                    <div class="project-visual">
+                        <div class="tech-stack">
+                            <span class="tech-item">AR</span>
+                            <span class="tech-item">VR</span>
+                            <span class="tech-item">WebGL</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-ar="منصة تعليمية تفاعلية" data-en="Interactive Learning Platform">منصة تعليمية تفاعلية</h3>
+                        <p data-ar="تجربة تعلم متطورة مع الواقع المعزز" data-en="Advanced learning experience with augmented reality">تجربة تعلم متطورة مع الواقع المعزز</p>
+                        <div class="project-status">
+                            <span class="status-badge beta" data-ar="نسخة تجريبية" data-en="Beta Version">نسخة تجريبية</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lab-project">
+                    <div class="project-visual">
+                        <div class="tech-stack">
+                            <span class="tech-item">IoT</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">MQTT</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-ar="نظام منزل ذكي" data-en="Smart Home System">نظام منزل ذكي</h3>
+                        <p data-ar="إدارة متكاملة للمنزل الذكي مع التحكم الصوتي" data-en="Integrated smart home management with voice control">إدارة متكاملة للمنزل الذكي مع التحكم الصوتي</p>
+                        <div class="project-status">
+                            <span class="status-badge completed" data-ar="مكتمل" data-en="Completed">مكتمل</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lab-cta">
+                <p data-ar="هل تريد رؤية المزيد من مشاريعنا التجريبية؟" data-en="Want to see more of our experimental projects?">هل تريد رؤية المزيد من مشاريعنا التجريبية؟</p>
+                <button class="lab-btn" data-ar="استكشف المختبر" data-en="Explore Lab">استكشف المختبر</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Please Call Me Section -->
+    <section class="call-me" id="trainer">
+        <div class="container">
+            <h2 class="section-title" data-ar="مدرب المعسكر" data-en="Bootcamp Trainer">مدرب المعسكر</h2>
+            <div class="trainer-profile">
+                <div class="trainer-visual">
+                    <div class="trainer-image">
+                        <div class="image-frame">
+                            <img src="identity_rock_and_mac.jpg" alt="صورة م. عزام" class="trainer-img">
+                        </div>
+                        <div class="image-badge">
+                            <i class="fas fa-star"></i>
+                            <span data-ar="مدرب معتمد" data-en="Certified Trainer">مدرب معتمد</span>
+                        </div>
+                    </div>
+                    <div class="trainer-quick-info">
+                        <div class="quick-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label" data-ar="طالب متخرج" data-en="Graduates">طالب متخرج</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label" data-ar="سنوات خبرة" data-en="Years Experience">سنوات خبرة</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label" data-ar="مشروع مكتمل" data-en="Projects Completed">مشروع مكتمل</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trainer-details">
+                    <div class="trainer-header">
+                        <h3 data-ar="م. عزام الراشد" data-en="M. Azzam Al-Rashid">م. عزام الراشد</h3>
+                        <p class="trainer-title" data-ar="مدرب معسكر البرمجة المتخصص" data-en="Specialized Coding Bootcamp Trainer">مدرب معسكر البرمجة المتخصص</p>
+                    </div>
+                    
+                    <div class="trainer-description">
+                        <p data-ar="خبرة 8+ سنوات في تطوير البرمجيات والتدريب التقني. متخصص في التقنيات الحديثة والذكاء الاصطناعي. حاصل على شهادات معتمدة من Apple و SAFCSP." data-en="8+ years of experience in software development and technical training. Specialized in modern technologies and artificial intelligence. Certified by Apple and SAFCSP.">
+                            خبرة 8+ سنوات في تطوير البرمجيات والتدريب التقني. متخصص في التقنيات الحديثة والذكاء الاصطناعي. حاصل على شهادات معتمدة من Apple و SAFCSP.
+                        </p>
+                    </div>
+                    
+                    <div class="trainer-expertise">
+                        <h4 data-ar="مجالات التخصص" data-en="Areas of Expertise">مجالات التخصص</h4>
+                        <div class="expertise-tags">
+                            <span class="expertise-tag">Python</span>
+                            <span class="expertise-tag">JavaScript</span>
+                            <span class="expertise-tag">React</span>
+                            <span class="expertise-tag">Node.js</span>
+                            <span class="expertise-tag">AI/ML</span>
+                            <span class="expertise-tag">iOS Development</span>
+                            <span class="expertise-tag">Web Development</span>
+                            <span class="expertise-tag">Database Design</span>
+                        </div>
+                    </div>
+                    
+                    <div class="trainer-certifications">
+                        <h4 data-ar="الشهادات المعتمدة" data-en="Certifications">الشهادات المعتمدة</h4>
+                        <div class="certifications-grid">
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h5 data-ar="مدرب معتمد من Apple" data-en="Apple Certified Trainer">مدرب معتمد من Apple</h5>
+                                    <p data-ar="تطوير تطبيقات iOS" data-en="iOS App Development">تطوير تطبيقات iOS</p>
+                                </div>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h5 data-ar="شهادة SAFCSP" data-en="SAFCSP Certificate">شهادة SAFCSP</h5>
+                                    <p data-ar="أمن المعلومات" data-en="Information Security">أمن المعلومات</p>
+                                </div>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h5 data-ar="مطور Full Stack" data-en="Full Stack Developer">مطور Full Stack</h5>
+                                    <p data-ar="تطوير الويب الشامل" data-en="Complete Web Development">تطوير الويب الشامل</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trainer-achievements">
+                        <h4 data-ar="الإنجازات" data-en="Achievements">الإنجازات</h4>
+                        <div class="achievements-list">
+                            <div class="achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span data-ar="أفضل مدرب تقني 2023" data-en="Best Technical Trainer 2023">أفضل مدرب تقني 2023</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span data-ar="معدل نجاح 95% للطلاب" data-en="95% Student Success Rate">معدل نجاح 95% للطلاب</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-star"></i>
+                                <span data-ar="تقييم 4.9/5 من الطلاب" data-en="4.9/5 Student Rating">تقييم 4.9/5 من الطلاب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Thumbnails Section -->
+    <section class="projects">
+        <div class="container">
+            <h2 class="section-title" data-ar="المشاريع المميزة" data-en="Featured Projects">المشاريع المميزة</h2>
+            <div class="projects-intro">
+                <p data-ar="استكشف أفضل المشاريع التي طورها طلابنا في معسكر عزام البرمجي" data-en="Explore the best projects developed by our students at Azzam Coding Bootcamp">استكشف أفضل المشاريع التي طورها طلابنا في معسكر عزام البرمجي</p>
+            </div>
+            <div class="projects-showcase">
+                <div class="project-featured">
+                    <div class="project-main">
+                        <div class="project-image">
+                            <img src="identity_modern_office.jpg" alt="مشروع شهية">
+                            <div class="project-badge">
+                                <i class="fas fa-star"></i>
+                                <span data-ar="مشروع مميز" data-en="Featured Project">مشروع مميز</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 data-ar="شهية" data-en="Appetite">شهية</h3>
+                                <div class="project-category" data-ar="تطبيق موبايل" data-en="Mobile App">تطبيق موبايل</div>
+                            </div>
+                            <p data-ar="منصة توصيل طعام متطورة تصل بين المطاعم والعملاء مع نظام دفع آمن وتتبع مباشر للطلبات" data-en="Advanced food delivery platform connecting restaurants and customers with secure payment and real-time order tracking">منصة توصيل طعام متطورة تصل بين المطاعم والعملاء مع نظام دفع آمن وتتبع مباشر للطلبات</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe API</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-download"></i>
+                                    <span data-ar="10,000+ تحميل" data-en="10,000+ downloads">10,000+ تحميل</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-star"></i>
+                                    <span data-ar="4.8/5 تقييم" data-en="4.8/5 rating">4.8/5 تقييم</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-demo" data-ar="عرض تجريبي" data-en="Live Demo">عرض تجريبي</button>
+                                <button class="btn-github" data-ar="GitHub" data-en="GitHub">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-thumbnail">
+                            <img src="identity_rock_and_mac.jpg" alt="مشروع ليندهب">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h4 data-ar="ليندهب" data-en="Lendhub">ليندهب</h4>
+                                    <p data-ar="منصة خدمات مالية" data-en="Financial services platform">منصة خدمات مالية</p>
+                                    <div class="overlay-tech">
+                                        <span>Vue.js</span>
+                                        <span>Python</span>
+                                        <span>PostgreSQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 data-ar="ليندهب" data-en="Lendhub">ليندهب</h4>
+                            <p data-ar="منصة خدمات مالية شاملة" data-en="Comprehensive financial services platform">منصة خدمات مالية شاملة</p>
+                            <div class="project-meta">
+                                <span class="project-year">2023</span>
+                                <span class="project-status" data-ar="مكتمل" data-en="Completed">مكتمل</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-thumbnail">
+                            <img src="hero_background.jpg" alt="مشروع تعليمي">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h4 data-ar="منصة تعليمية" data-en="Learning Platform">منصة تعليمية</h4>
+                                    <p data-ar="نظام إدارة تعلم" data-en="Learning management system">نظام إدارة تعلم</p>
+                                    <div class="overlay-tech">
+                                        <span>Angular</span>
+                                        <span>Java</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 data-ar="منصة تعليمية" data-en="Learning Platform">منصة تعليمية</h4>
+                            <p data-ar="نظام إدارة تعلم ذكي" data-en="Smart learning management system">نظام إدارة تعلم ذكي</p>
+                            <div class="project-meta">
+                                <span class="project-year">2023</span>
+                                <span class="project-status" data-ar="قيد التطوير" data-en="In Development">قيد التطوير</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-thumbnail">
+                            <img src="identity_heritage_building.jpg" alt="مشروع ذكي">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h4 data-ar="نظام ذكي" data-en="Smart System">نظام ذكي</h4>
+                                    <p data-ar="إدارة المنزل الذكي" data-en="Smart home management">إدارة المنزل الذكي</p>
+                                    <div class="overlay-tech">
+                                        <span>IoT</span>
+                                        <span>Arduino</span>
+                                        <span>Python</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 data-ar="نظام ذكي" data-en="Smart System">نظام ذكي</h4>
+                            <p data-ar="نظام إدارة منزل ذكي" data-en="Smart home management system">نظام إدارة منزل ذكي</p>
+                            <div class="project-meta">
+                                <span class="project-year">2024</span>
+                                <span class="project-status" data-ar="مكتمل" data-en="Completed">مكتمل</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-stats">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label" data-ar="مشروع مكتمل" data-en="Completed Projects">مشروع مكتمل</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label" data-ar="معدل النجاح" data-en="Success Rate">معدل النجاح</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label" data-ar="طالب مشارك" data-en="Participating Students">طالب مشارك</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section class="fun-facts">
+        <div class="container">
+            <h2 class="section-title" data-ar="الإنجازات" data-en="Achievements">الإنجازات</h2>
+            <div class="achievements-intro">
+                <p data-ar="نفتخر بإنجازاتنا التي تعكس التميز والتفوق في مجال التدريب التقني" data-en="We are proud of our achievements that reflect excellence and leadership in technical training">نفتخر بإنجازاتنا التي تعكس التميز والتفوق في مجال التدريب التقني</p>
+            </div>
+            
+            <div class="achievements-showcase">
+                <div class="achievement-highlight">
+                    <div class="highlight-content">
+                        <div class="highlight-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <h3 data-ar="أفضل معسكر برمجي 2024" data-en="Best Coding Bootcamp 2024">أفضل معسكر برمجي 2024</h3>
+                            <p data-ar="حصلنا على جائزة أفضل معسكر برمجي في المملكة العربية السعودية من قبل وزارة الاتصالات وتقنية المعلومات" data-en="We received the Best Coding Bootcamp award in Saudi Arabia from the Ministry of Communications and Information Technology">حصلنا على جائزة أفضل معسكر برمجي في المملكة العربية السعودية من قبل وزارة الاتصالات وتقنية المعلومات</p>
+                            <div class="highlight-badge">
+                                <span data-ar="جائزة رسمية" data-en="Official Award">جائزة رسمية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4 data-ar="الطلاب المتخرجين" data-en="Graduated Students">الطلاب المتخرجين</h4>
+                            <div class="achievement-number">500+</div>
+                            <p data-ar="طالب متخرج بنجاح" data-en="Successfully graduated students">طالب متخرج بنجاح</p>
+                            <div class="achievement-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span data-ar="+25% هذا العام" data-en="+25% this year">+25% هذا العام</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4 data-ar="معدل التوظيف" data-en="Employment Rate">معدل التوظيف</h4>
+                            <div class="achievement-number">95%</div>
+                            <p data-ar="من الخريجين حصلوا على وظائف" data-en="Of graduates got jobs">من الخريجين حصلوا على وظائف</p>
+                            <div class="achievement-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span data-ar="+5% عن العام الماضي" data-en="+5% from last year">+5% عن العام الماضي</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4 data-ar="تقييم الطلاب" data-en="Student Rating">تقييم الطلاب</h4>
+                            <div class="achievement-number">4.9/5</div>
+                            <p data-ar="تقييم ممتاز من الطلاب" data-en="Excellent rating from students">تقييم ممتاز من الطلاب</p>
+                            <div class="achievement-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span data-ar="+0.2 عن العام الماضي" data-en="+0.2 from last year">+0.2 عن العام الماضي</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4 data-ar="المشاريع المكتملة" data-en="Completed Projects">المشاريع المكتملة</h4>
+                            <div class="achievement-number">150+</div>
+                            <p data-ar="مشروع حقيقي مكتمل" data-en="Real projects completed">مشروع حقيقي مكتمل</p>
+                            <div class="achievement-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span data-ar="+30% هذا العام" data-en="+30% this year">+30% هذا العام</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievements-timeline">
+                <h3 data-ar="رحلة الإنجازات" data-en="Journey of Achievements">رحلة الإنجازات</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h4 data-ar="تأسيس المعسكر" data-en="Bootcamp Founded">تأسيس المعسكر</h4>
+                            <p data-ar="بداية رحلة التدريب التقني" data-en="Beginning of technical training journey">بداية رحلة التدريب التقني</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-content">
+                            <h4 data-ar="أول 100 طالب" data-en="First 100 Students">أول 100 طالب</h4>
+                            <p data-ar="تخرج أول دفعة من الطلاب" data-en="First batch of students graduated">تخرج أول دفعة من الطلاب</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-content">
+                            <h4 data-ar="شهادة Apple" data-en="Apple Certification">شهادة Apple</h4>
+                            <p data-ar="الحصول على شهادة مدرب معتمد من Apple" data-en="Obtained Apple Certified Trainer certification">الحصول على شهادة مدرب معتمد من Apple</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-content">
+                            <h4 data-ar="جائزة SAFCSP" data-en="SAFCSP Award">جائزة SAFCSP</h4>
+                            <p data-ar="الحصول على شهادة SAFCSP" data-en="Obtained SAFCSP certification">الحصول على شهادة SAFCSP</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h4 data-ar="أفضل معسكر" data-en="Best Bootcamp">أفضل معسكر</h4>
+                            <p data-ar="جائزة أفضل معسكر برمجي في المملكة" data-en="Best Coding Bootcamp Award in Saudi Arabia">جائزة أفضل معسكر برمجي في المملكة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3 data-ar="معسكر عزام البرمجي" data-en="Azzam Coding Bootcamp">معسكر عزام البرمجي</h3>
+                    <p data-ar="برنامج تدريبي متخصص للمطورين السعوديين" data-en="Specialized training program for Saudi developers">برنامج تدريبي متخصص للمطورين السعوديين</p>
+                </div>
+                <div class="footer-right">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
