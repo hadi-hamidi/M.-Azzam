@@ -208,7 +208,7 @@ const translations = {
 - **الموقع الإلكتروني** | Website: [azzam-coding.com](https://azzam-coding.com)
 
 ### وسائل التواصل الاجتماعي | Social Media
-- **LinkedIn**: [azzam-alrashid](https://linkedin.com/in/azzam-alrashid)
+- **LinkedIn**: [azzam-rar](https://www.linkedin.com/in/azzam-rar/)
 - **Instagram**: [azzam.coding](https://instagram.com/azzam.coding)
 - **Twitter**: [azzam_coding](https://x.com/azzam_coding)
 - **TikTok**: [azzam.coding](https://tiktok.com/@azzam.coding)

@@ -227,7 +227,7 @@ function typeWriter(element, text, speed = 80) {
     type();
 }
 
-// Simple Page Load
+// Enhanced Page Load with Staggered Animation
 window.addEventListener('load', () => {
     console.log('Website loaded successfully!');
     
@@ -240,25 +240,35 @@ window.addEventListener('load', () => {
         return;
     }
     
-    // Ensure text is visible immediately
+    // Reset all title lines to hidden state
     titleLines.forEach((line, index) => {
-        console.log(`Title line ${index}:`, line.textContent);
-        line.style.opacity = '1';
-        line.style.visibility = 'visible';
-        line.style.transform = 'translateY(0)';
+        line.style.opacity = '0';
+        line.style.visibility = 'hidden';
+        line.style.transform = 'translateY(30px)';
         line.style.display = 'inline-block';
+        line.textContent = ''; // Clear text initially
     });
     
-    // Simple typing animation
+    // Enhanced typing animation with better timing
     const titles = currentLanguage === 'ar' ? 
         ['متخصص', 'تقني', 'مدرب'] : 
         ['EXPERT', 'TECHNICAL', 'TRAINER'];
     
-    titleLines.forEach((line, index) => {
-        setTimeout(() => {
-            typeWriter(line, titles[index], 100);
-        }, index * 1000);
-    });
+    // Start animation after a short delay
+    setTimeout(() => {
+        titleLines.forEach((line, index) => {
+            setTimeout(() => {
+                // Show the line with fade-in effect
+                line.style.opacity = '1';
+                line.style.visibility = 'visible';
+                line.style.transform = 'translateY(0)';
+                line.style.transition = 'all 0.6s ease-out';
+                
+                // Start typing animation with faster speed
+                typeWriter(line, titles[index], 60);
+            }, index * 600); // Faster sequence for better flow
+        });
+    }, 300); // Reduced initial delay
 });
 
 // Cursor trail effect
@@ -405,6 +415,55 @@ window.addEventListener('load', function() {
             },
             "retina_detect": true
         });
+    }
+});
+
+// CV Tabs Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const cvTabs = document.querySelectorAll('.cv-tab');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    
+    cvTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Remove active class from all tabs
+            cvTabs.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tab
+            this.classList.add('active');
+            
+            // Hide all tab panes
+            tabPanes.forEach(pane => {
+                pane.classList.remove('active');
+            });
+            
+            // Show target tab pane
+            const targetPane = document.getElementById(targetTab);
+            if (targetPane) {
+                targetPane.classList.add('active');
+            }
+        });
+    });
+    
+    // Animate skill bars when skills tab is active
+    const skillsTab = document.getElementById('skills');
+    if (skillsTab) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 200);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(skillsTab);
     }
 });
 
